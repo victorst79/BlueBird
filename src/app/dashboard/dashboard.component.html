@@ -3,6 +3,12 @@
   <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
     <mat-grid-tile>
       <h3>Open Contacts</h3>
+      <table mat-table>
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell> 1</td>
+        </ng-container>
+      </table>
     </mat-grid-tile>
     <mat-grid-tile>
       <h3>Open Tickets</h3>
