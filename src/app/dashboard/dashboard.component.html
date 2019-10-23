@@ -1,21 +1,13 @@
 <section id="dashboard">
-  <h1>Welcome {{userName}}</h1>
-  <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
-    <mat-grid-tile>
-      <h3>Open Contacts</h3>
-      <table mat-table>
-        <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef> No. </th>
-          <td mat-cell> 1</td>
-        </ng-container>
-      </table>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <h3>Open Tickets</h3>
-    </mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-    <mat-grid-tile>5</mat-grid-tile>
-    <mat-grid-tile>6</mat-grid-tile>
-  </mat-grid-list>
+  <div class="container">
+    <h4>Welcome {{userName}}</h4>
+    <div class="row">
+      <div class="col s6">
+        Tabla 1
+      </div>
+      <div class="col s6">
+        Tabla 2
+      </div>
+    </div>
+  </div>
 </section>
